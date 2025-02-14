@@ -1,7 +1,7 @@
-import { dirname } from "path";
-import { fileURLToPath } from "url";
 import { FlatCompat } from "@eslint/eslintrc";
 import fs from "fs";
+import { dirname } from "path";
+import { fileURLToPath } from "url";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -21,6 +21,7 @@ function getDirectories(path) {
   });
 }
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default [
   {
     languageOptions: {

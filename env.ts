@@ -3,12 +3,7 @@ import { z } from "zod";
 
 export const env = createEnv({
   server: {
-    MK1_BASE_URL: z.string().url(),
-    R2_ACCOUNT_ID: z.string(),
-    R2_ACCESS_KEY_ID: z.string(),
-    R2_SECRET_ACCESS_KEY: z.string(),
-    R2_BUCKET_NAME: z.string(),
-    R2_REGION: z.string(),
+    MUCKRACK_BASE_URL: z.string().url(),
   },
   client: {},
   experimental__runtimeEnv: process.env,
