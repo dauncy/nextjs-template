@@ -15,6 +15,11 @@ Features Include:
 - typed env
 ---
 
+#### Use template
+```bash
+npx create-next-app@latest <app-name> --use-yarn --example "https://github.com/dauncy/nextjs-template"
+```
+
 #### Install
 
 ```bash
