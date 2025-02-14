@@ -3,7 +3,7 @@ import { z } from "zod";
 
 export const env = createEnv({
   server: {
-    MUCKRACK_BASE_URL: z.string().url(),
+    BACKEND_URL: z.string().url(),
   },
   client: {},
   experimental__runtimeEnv: process.env,
