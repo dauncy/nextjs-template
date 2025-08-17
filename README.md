@@ -16,7 +16,7 @@ Features Include:
 
 #### Use template
 ```bash
-npx create-next-app@latest <app-name> --example "https://github.com/dauncy/nextjs-template"
+bun create-next-app@latest <app-name> --example "https://github.com/dauncy/nextjs-template"
 ```
 
 #### Install
