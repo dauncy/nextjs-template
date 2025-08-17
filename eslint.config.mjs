@@ -31,17 +31,15 @@ export default [
   ...compat.extends(
     "next",
     "prettier",
-    "plugin:tailwindcss/recommended",
     "plugin:@typescript-eslint/recommended"
   ),
   {
     plugins: {
       "@typescript-eslint": (await import("@typescript-eslint/eslint-plugin")).default,
+      import: (await import("eslint-plugin-import")).default,
     },
     rules: {
       "@typescript-eslint/consistent-type-imports": "error",
-      "tailwindcss/no-custom-classname": "off",
-      "testing-library/prefer-screen-queries": "off",
       "@next/next/no-html-link-for-pages": "off",
       "@typescript-eslint/no-unused-vars": [
         "warn",
@@ -57,7 +55,6 @@ export default [
           ignoreDeclarationSort: true,
         },
       ],
-      "tailwindcss/classnames-order": "off",
       "import/no-cycle": "error",
       "import/order": [
         1,

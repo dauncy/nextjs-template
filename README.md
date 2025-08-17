@@ -1,43 +1,53 @@
 # NextJS Template Repo
-###### By Daniel WIlder
+###### By Daniel Wilder
 
 ---
 
-This repository is a template repo for nextjs projects. 
+This repository is a template repo for Next.js projects.
 Features Include:
-- NextJS app router
+- Next.js 15 (App Router)
 - Typescript
-- TailwindCSS
+- Tailwind CSS v4
 - Shadcn UI
-- husky precommit
-- linting
-- formatting
+- Husky pre-commit with lint-staged
+- ESLint + Prettier
 - typed env
 ---
 
 #### Use template
 ```bash
-npx create-next-app@latest <app-name> --use-yarn --example "https://github.com/dauncy/nextjs-template"
+npx create-next-app@latest <app-name> --example "https://github.com/dauncy/nextjs-template"
 ```
 
 #### Install
 
 ```bash
-yarn
+bun install
 ```
 
 #### Run
 
 ```bash
-yarn dev
+bun run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+### Linting, Formatting, and Pre-commit
+
+- ESLint: `bun run lint`
+- Prettier (check): `bun run prettier`
+- Prettier (write): `bun run format`
+- Pre-commit (husky + lint-staged): runs ESLint and Prettier on staged files
+
+### Tailwind CSS v4
+
+Tailwind v4 uses a CSS-first configuration. We import Tailwind via `@import "tailwindcss";` in `app/globals.css` and define theme tokens with `@theme`. The legacy `tailwind.config.ts` has been removed.
+
 ### Useful Resources
 
 - [NextJS](https://nextjs.org/docs)
-- [TailwindCSS](https://tailwindcss.com/docs)
+- [Tailwind CSS v4](https://tailwindcss.com/docs)
 - [Shadcn UI](https://ui.shadcn.com/docs)
 - [husky](https://typicode.github.io/husky/#/)
 - [lint-staged](https://github.com/okonet/lint-staged)
